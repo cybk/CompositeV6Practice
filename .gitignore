@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CompositeV6/CompositeV6/bin/Debug/net6.0
+/CompositeV6/.vs/CompositeV6
+/CompositeV6/CompositeV6/obj
