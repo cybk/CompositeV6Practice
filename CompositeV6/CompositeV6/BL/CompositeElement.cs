@@ -7,18 +7,18 @@ using System.Xml.Linq;
 
 namespace CompositeV6.BL
 {
-    public class CompositeElement : DrawingElement
+    public class CompositeElement : BaseElement
     {
-        private IList<DrawingElement> elements = new List<DrawingElement>();
+        private IList<BaseElement> elements = new List<BaseElement>();
 
         public CompositeElement(string name) : base(name) {}
 
-        public override void Add(DrawingElement e)
+        public override void Add(BaseElement e)
         {
             elements.Add(e);
         }
         
-        public override void Remove(DrawingElement e)
+        public override void Remove(BaseElement e)
         {
             elements.Remove(e);
         }
