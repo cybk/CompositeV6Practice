@@ -1,19 +1,19 @@
 ﻿namespace CompositeV6.BL
 {
-    public class CompositeElement : BaseElement
+    public class CompositeElement : BaseElement, ICompound
     {
-        private IList<BaseElement> elements = new List<BaseElement>();
+        private readonly IList<BaseElement> elements = new List<BaseElement>();
 
         public CompositeElement(string name) : base(name)
         {
         }
 
-        public override void Add(BaseElement e)
+        public void Add(BaseElement e)
         {
             elements.Add(e);
         }
 
-        public override void Remove(BaseElement e)
+        public void Remove(BaseElement e)
         {
             elements.Remove(e);
         }

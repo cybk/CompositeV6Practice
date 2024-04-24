@@ -4,13 +4,13 @@ using CompositeV6.BL;
 Console.WriteLine("Hello, World!");
 
 // First we create the initial tree estructure
-BaseElement root = new CompositeElement("Picture");
+var root = new CompositeElement("Picture");
 root.Add(new SimpleElement("Red Line"));
 root.Add(new SimpleElement("Blue Circle"));
 root.Add(new SimpleElement("Green Box"));
 
 // We added a branch
-BaseElement com = new CompositeElement("Two Circles");
+var com = new CompositeElement("Two Circles");
 com.Add(new SimpleElement("Black Circle"));
 com.Add(new SimpleElement("White Circle"));
 root.Add(com);
