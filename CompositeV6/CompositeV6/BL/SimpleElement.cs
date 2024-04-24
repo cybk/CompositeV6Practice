@@ -1,10 +1,8 @@
-﻿using System.Xml.Linq;
-
-namespace CompositeV6.BL
+﻿namespace CompositeV6.BL
 {
-    public class PrimitiveElement : BaseElement
+    public class SimpleElement : BaseElement
     {
-        public PrimitiveElement(string name) : base(name)
+        public SimpleElement(string name) : base(name)
         {
         }
 

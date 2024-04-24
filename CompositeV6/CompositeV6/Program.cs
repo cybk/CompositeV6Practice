@@ -5,18 +5,18 @@ Console.WriteLine("Hello, World!");
 
 // First we create the initial tree estructure
 BaseElement root = new CompositeElement("Picture");
-root.Add(new PrimitiveElement("Red Line"));
-root.Add(new PrimitiveElement("Blue Circle"));
-root.Add(new PrimitiveElement("Green Box"));
+root.Add(new SimpleElement("Red Line"));
+root.Add(new SimpleElement("Blue Circle"));
+root.Add(new SimpleElement("Green Box"));
 
 // We added a branch
 BaseElement com = new CompositeElement("Two Circles");
-com.Add(new PrimitiveElement("Black Circle"));
-com.Add(new PrimitiveElement("White Circle"));
+com.Add(new SimpleElement("Black Circle"));
+com.Add(new SimpleElement("White Circle"));
 root.Add(com);
 
 // Now we add and remove an element
-BaseElement pe = new PrimitiveElement("Yellow Line");
+BaseElement pe = new SimpleElement("Yellow Line");
 root.Add(pe);
 root.Remove(pe);
 

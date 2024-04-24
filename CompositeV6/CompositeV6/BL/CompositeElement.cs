@@ -1,27 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
-
-namespace CompositeV6.BL
+﻿namespace CompositeV6.BL
 {
     public class CompositeElement : BaseElement
     {
         private IList<BaseElement> elements = new List<BaseElement>();
 
-        public CompositeElement(string name) : base(name) {}
+        public CompositeElement(string name) : base(name)
+        {
+        }
 
         public override void Add(BaseElement e)
         {
             elements.Add(e);
         }
-        
+
         public override void Remove(BaseElement e)
         {
             elements.Remove(e);
         }
+
         public override void Display(int indent)
         {
             // Display the level and name for the element
